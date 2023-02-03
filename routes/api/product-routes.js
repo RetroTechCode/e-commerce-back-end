@@ -18,9 +18,7 @@ router.get('/', (req, res) => {
     }]
   })
     .then(data => res.json(data))
-    .catch(err => {
-      res.status(500).json(err);
-    })
+    .catch(err => res.status(500).json(err));
 });
 
 // get one product
@@ -46,9 +44,7 @@ router.get('/:id', (req, res) => {
       }
       res.json(data)
     })
-    .catch(err => {
-      res.status(500).json(err);
-    })
+    .catch(err => res.status(500).json(err));
 });
 
 // create new product
@@ -137,10 +133,8 @@ router.delete('/:id', (req, res) => {
       res.status(404).json("Error - Could not find a product with that ID!");
     }
     res.json(data)
-    .catch(err => {
-      res.status(500).json(err);
-    })
-  })
+    .catch(err => res.status(500).json(err));
+  });
 });
 
 module.exports = router;
