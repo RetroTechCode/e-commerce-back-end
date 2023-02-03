@@ -23,7 +23,7 @@ This application was built in order to tie together a back-end e-commerce system
 ## Usage
 Start the application by running "npm start" within the root directory of the repo. Then use [Insomnia](https://insomnia.rest) in order to internet with the application through GET, POST, PUT, and DELETE requests.
 
-[Example usage and testing video walkthrough](google.com)
+[Example usage and testing video walkthrough](https://drive.google.com/file/d/1D6FJ7xoV-4PCjICJjD4cLsZ5F1FO4a46/view)
 
 ## Testing
 N/A
