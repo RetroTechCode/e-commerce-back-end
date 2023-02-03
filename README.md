@@ -21,7 +21,7 @@ This application was built in order to tie together a back-end e-commerce system
 7. (Optional) - Seed the database by running "npm run seed".
   
 ## Usage
-Use Insomnia in order to internet with the application through GET, POST, PUT, and DELETE requests.
+Start the application by running "npm start" within the root directory of the repo. Then use [Insomnia](https://insomnia.rest) in order to internet with the application through GET, POST, PUT, and DELETE requests.
 
 [Example usage and testing video walkthrough](google.com)
 

@@ -34,7 +34,12 @@ router.get('/:id', (req, res) => {
       atttributes: ['id', 'product_name', 'price', 'stock', 'category_id']
     }]
   })
-    .then(data => res.json(data))
+    .then(data => {
+      if (!data) {
+        res.status(404).json("Error - Could not find a category with that ID!");
+      }
+      res.json(data);
+    })
     .catch(err => res.status(500).json(err));
 });
 
@@ -73,13 +78,13 @@ router.delete('/:id', (req, res) => {
       id: req.params.id
     }
   })
-  .then(data => {
-    if (!data) {
-      res.status(404).json("Error - Could not find a category with that ID!");
-    }
-    res.json(data);
-  })
-  .catch(err => res.status(500).json(err))
+    .then(data => {
+      if (!data) {
+        res.status(404).json("Error - Could not find a category with that ID!");
+      }
+      res.json(data);
+    })
+    .catch(err => res.status(500).json(err))
 });
 
 module.exports = router;
